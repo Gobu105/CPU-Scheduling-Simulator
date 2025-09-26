@@ -1,7 +1,6 @@
 # CPU Scheduling Simulator 🖥️⏱️
 
 ![C](https://img.shields.io/badge/Language-C-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
 
 A simple interactive **CPU Scheduling Simulator** in C supporting multiple algorithms with tables, Gantt charts, and average calculations.
 
@@ -73,13 +72,3 @@ Copy code
 Priority: Lower number = higher priority.
 
 RR Quantum: Must be positive integer.
-
-License
-MIT License © Your Name
-
-vbnet
-Copy code
-
-This is short, clear, and perfect for GitHub.  
-
-I can also **add a small diagram of a Gantt chart example** directly 
