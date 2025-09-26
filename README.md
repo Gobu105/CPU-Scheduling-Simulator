@@ -44,22 +44,22 @@ Sample Commands:
 text
 Copy code
 > scheduling
-# Enter process arrival, burst, priority
+## Enter process arrival, burst, priority
 
 > gantt all
-# Display all Gantt charts
+## Display all Gantt charts
 
 > table fcfs
-# Display FCFS table
+## Display FCFS table
 
 > quantum 4
-# Set RR quantum to 4
+## Set RR quantum to 4
 
 > average
-# Show average WT/TAT for all algorithms
+## Show average WT/TAT for all algorithms
 
 > quit
-# Exit shell
+## Exit shell
 Input Format
 Each process: ArrivalTime BurstTime Priority
 
