@@ -64,5 +64,7 @@ Copy code
 
 Input Format
 Each process: ArrivalTime   BurstTime   Priority
+
 Priority: Lower number = higher priority.
+
 RR Quantum: Must be positive integer.
