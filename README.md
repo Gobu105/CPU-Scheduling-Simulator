@@ -60,15 +60,9 @@ Copy code
 
 > quit
 ## Exit shell
+
+
 Input Format
-Each process: ArrivalTime BurstTime Priority
-
-Example:
-
-Copy code
-0 5 2
-1 3 1
-2 8 3
+Each process: ArrivalTime   BurstTime   Priority
 Priority: Lower number = higher priority.
-
 RR Quantum: Must be positive integer.
