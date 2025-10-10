@@ -66,4 +66,15 @@ void print_average(Process procs[], int n){
     printf("\nAvg WT = %.2f\nAvg TAT = %.2f\nAvg RT = %.2f\n", total_wt / n, total_tat / n, total_rt / n);
 }
 
+int is_valid_algo(const char *alg) {
+    const char *valid_algos[] = {"all", "fcfs", "sjf", "srt", "pp", "pnp", "rr"};
+    int count = sizeof(valid_algos) / sizeof(valid_algos[0]);
+    for (int i = 0; i < count; i++) {
+        if (strcmp(alg, valid_algos[i]) == 0)
+            return 1;
+    }
+    return 0;
+}
+
+
 #endif /* UTILS_H */
