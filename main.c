@@ -127,9 +127,16 @@ int main() {
                 printf("❌ No processes entered yet. Use 'scheduling' first.\n");
                 continue;
             }
-            printf("Enter algorithm name (all/fcfs/sjf/srt/pp/pnp/rr): ");
-            if (scanf("%15s", alg) != 1)
+            do {
+              printf("Enter algorithm name (all/fcfs/sjf/srt/pp/pnp/rr): ");
+              if (scanf("%15s", alg) != 1) {
                 strcpy(alg, "all");
+                break;
+              }
+              if (!is_valid_algo(alg)) {
+                printf("❌ Invalid algorithm name. Please try again.\n");
+              }
+            } while (!is_valid_algo(alg));
             while ((c = getchar()) != '\n' && c != EOF);
 
             if (show_gantt) {
@@ -168,9 +175,16 @@ int main() {
                 printf("❌ No processes entered yet. Use 'scheduling' first.\n");
                 continue;
             }
-            printf("Enter algorithm name (all/fcfs/sjf/srt/pp/pnp/rr): ");
-            if (scanf("%15s", alg) != 1)
+            do {
+              printf("Enter algorithm name (all/fcfs/sjf/srt/pp/pnp/rr): ");
+              if (scanf("%15s", alg) != 1) {
                 strcpy(alg, "all");
+                break;
+              }
+              if (!is_valid_algo(alg)) {
+                printf("❌ Invalid algorithm name. Please try again.\n");
+              }
+            } while (!is_valid_algo(alg));
             while ((c = getchar()) != '\n' && c != EOF);
 
             if (!strcmp(alg, "fcfs") || !strcmp(alg, "all"))
